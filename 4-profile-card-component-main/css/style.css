@@ -1,0 +1,109 @@
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+}
+.card{
+    border-radius: 10px;
+    text-align: center;
+    position:relative;
+    margin-top: -20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 260px;
+    background-color: #fff;
+    box-shadow: 10px 5px 5px rgba(14, 13, 13, 0.233);
+  
+}
+h5{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+.cor{
+    background-color: hsl(185, 73%, 46%);
+    width: 100%;
+    height: 40%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5%;
+}
+#foto{
+    border-radius: 70px;
+    margin: auto;
+    margin-bottom: -45%;
+    width: 60px;
+    border-style: solid;
+    border-width: medium;
+    border-color: #fff;
+    
+}
+.titulo{
+    margin-top: 15%;
+}
+main{
+    height: 100px;
+}
+#img-top{
+    margin-left: -20%;
+    margin-top: -45%;
+}
+#img-bottom{
+    float: right;
+    margin-right: -20%;
+    margin-top: -18%;
+}
+p{
+    font-size: 12px;
+}
+.dados1{
+    margin-top: -10%;
+    margin-left: 7%;
+    padding: 4%;
+    float: left;
+}
+h6{
+    margin-bottom: -10%;
+    color: hsl(229, 23%, 23%);
+}
+.attribution{
+    margin-top: 2%;
+    margin-right: 0%;
+}
+
+@media all and (max-width: 400px){
+    body{
+        max-height: 700px;
+    }
+    .card{
+        border-radius: 10px;
+        text-align: center;
+        position:relative;
+        width: 330px;
+        height: 340px;
+        background-color: #fff;
+        box-shadow: 10px 5px 5px rgba(14, 13, 13, 0.233);
+    }
+    #foto{
+        border-radius: 70px;
+        margin: auto;
+        margin-bottom: -45%;
+        width: 90px;
+        border-style: solid;
+        border-width: medium;
+        border-color: #fff;
+        
+    }
+    #img-top{
+        margin-left: -80%;
+        margin-top: -100%;
+        width: 500px;
+    }
+    #img-bottom{
+        float: right;
+        margin-right: -90%;
+        margin-top:-50%;
+        width: 500px;
+    }
+}
