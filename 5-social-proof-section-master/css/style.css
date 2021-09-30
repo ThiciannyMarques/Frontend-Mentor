@@ -1,0 +1,109 @@
+body{
+    font-family: 'Spartan', sans-serif;
+    color:  hsl(303, 10%, 53%);
+}
+main{
+    padding: 8%;
+}
+
+.cima{
+    float: top;
+    width: 100%;
+    height: 20rem;
+    margin-top: -5%;
+}
+.dados{
+    float: left;
+    width: 45%;
+}
+.dados>h1{
+    width: 70%;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+.reviews{
+    color: hsl(300, 43%, 22%);
+    float: right;
+    width: 50%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: 14px;
+}
+.reviews1{
+    margin-right: 10%;
+    float: right;
+    width: 70%;
+    background-color: hsl(300, 24%, 96%);
+    border-radius:  5px;
+    margin-top: 2%;
+}
+.reviews2{
+    float: right;
+    width: 70%;
+    background-color: hsl(300, 24%, 96%);
+    border-radius:  5px;
+    margin-top: 2%;
+}
+
+.reviews3{
+    float: right;
+    margin-right: -10%;
+    width: 70%;
+    background-color: hsl(300, 24%, 96%);
+    border-radius:  5px;
+    margin-top: 2%;
+}
+
+
+.baixo{
+    margin-top: -5%;
+    float: bottom;
+    width: 100%;
+    height: 25rem;
+}
+.comentarios{
+    width: 67rem;
+    height: 35rem;
+    font-size: 15px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 400;
+}
+.coment{
+    padding: 2%;
+    float: left;
+    width: 28%;
+    height: 30%;
+    background-color:  hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+.coment>div{
+    margin-top: 5%;
+}
+.coment>div>b{
+    color: hsl(300, 24%, 96%);
+    font-size: 12px;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+.coment>div>p{
+    margin-top: 2%;
+    margin-left: 18%;
+    font-size: 13px;
+    color: hsl(333, 80%, 67%);
+}
+.coment>div>img{
+    float: left;
+    width: 35px;
+    border-radius: 100px;
+}
+#irene{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+#anne{
+    margin-top: 4%;
+}
+
