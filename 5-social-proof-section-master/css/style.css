@@ -7,7 +7,6 @@ main{
 }
 
 .cima{
-    margin-top: 10%;
     float: left;
     width: 100%;
     height: 80%;
@@ -113,6 +112,7 @@ main{
         text-align: center;
     }
     .cima{
+          margin-top: 10%;
           float: left;
           width: 100%;
           height: 80%;
