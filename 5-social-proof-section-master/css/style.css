@@ -7,7 +7,8 @@ main{
 }
 
 .cima{
-  float: left;
+    margin-top: 10%;
+    float: left;
     width: 100%;
     height: 80%;
 }
@@ -130,32 +131,37 @@ main{
       }
 
     .reviews{
+        text-align: left;
         color: hsl(300, 43%, 22%);
         width: 100%;
-        margin: auto;
+        margin-right: 0%;
         font-weight: 500;
         font-size: 14px;
+
     }
     .reviews1{
         background-color: hsl(300, 24%, 96%);
         border-radius:  5px;
         margin-top: 2%;
-        width: 90%;
-        margin-left: 50%;
+        width: 100%;
+        float: left;
+        padding: 2%;
     }
     .reviews2{
         background-color: hsl(300, 24%, 96%);
         border-radius:  5px;
         margin-top: 2%;
-        width: 90%;
+        width: 100%;
         float: left;
+        padding: 2%;
     }
     .reviews3{
         background-color: hsl(300, 24%, 96%);
         border-radius:  5px;
         margin-top: 2%;
-        width: 90%;
+        width: 100%;
         float: left;
+        padding: 2%;
     }
     
     .baixo{
@@ -175,6 +181,7 @@ main{
         height: 20%;
         background-color:  hsl(300, 43%, 22%);
         border-radius: 10px;
+        margin-left: 2%;
     }
     .coment>div{
         margin-top: 5%;
@@ -200,7 +207,7 @@ main{
         border-radius: 100px;
     }
     #irene{
-        margin-left: 5%;
+        margin-left: 2%;
     }
 }
 
