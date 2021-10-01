@@ -7,10 +7,9 @@ main{
 }
 
 .cima{
-    float: top;
+  float: left;
     width: 100%;
-    height: 20rem;
-    margin-top: -5%;
+    height: 80%;
 }
 .dados{
     float: left;
@@ -58,23 +57,24 @@ main{
 
 
 .baixo{
-    margin-top: -5%;
+    float: left;
     float: bottom;
     width: 100%;
-    height: 25rem;
+    height: 30%;
 }
 .comentarios{
-    width: 67rem;
-    height: 35rem;
+    
+    margin: auto;
     font-size: 15px;
     color: hsl(303, 10%, 53%);
     font-weight: 400;
 }
 .coment{
+    margin-left: 0;
     padding: 2%;
     float: left;
-    width: 28%;
-    height: 30%;
+    width: 25%;
+    height: 20%;
     background-color:  hsl(300, 43%, 22%);
     border-radius: 10px;
 }
@@ -105,5 +105,102 @@ main{
 }
 #anne{
     margin-top: 4%;
+}
+@media all and (max-width: 600px){
+    main{
+        padding: 2%;
+        text-align: center;
+    }
+    .cima{
+          float: left;
+          width: 100%;
+          height: 80%;
+      }
+
+      .dados{
+          margin: auto;
+          width: 100%;
+          margin-bottom: 5%;
+      }
+      .dados>h1{
+          width: 100%;
+          font-family: 'Spartan', sans-serif;
+          font-weight: 700;
+          color: hsl(300, 43%, 22%);
+      }
+
+    .reviews{
+        color: hsl(300, 43%, 22%);
+        width: 100%;
+        margin: auto;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .reviews1{
+        background-color: hsl(300, 24%, 96%);
+        border-radius:  5px;
+        margin-top: 2%;
+        width: 90%;
+        margin-left: 50%;
+    }
+    .reviews2{
+        background-color: hsl(300, 24%, 96%);
+        border-radius:  5px;
+        margin-top: 2%;
+        width: 90%;
+        float: left;
+    }
+    .reviews3{
+        background-color: hsl(300, 24%, 96%);
+        border-radius:  5px;
+        margin-top: 2%;
+        width: 90%;
+        float: left;
+    }
+    
+    .baixo{
+        margin-top: 5%;
+        width: 100%;
+        height: 30%;
+    }
+    .comentarios{
+        margin: auto;
+        font-size: 15px;
+        color:  hsl(303, 10%, 53%);
+    }
+    .coment{
+        margin: 5%;
+        padding: 2%;
+        width: 90%;
+        height: 20%;
+        background-color:  hsl(300, 43%, 22%);
+        border-radius: 10px;
+    }
+    .coment>div{
+        margin-top: 5%;
+        text-align: left;
+    }
+    .coment>div>b{
+        color: hsl(300, 24%, 96%);
+        font-size: 12px;
+        margin-top: 5%;
+    }
+    .coment>p{
+        text-align: left;
+        margin: 5%;
+    }
+    .coment>div>p{
+        margin-left: 22%;
+        font-size: 13px;
+        color: hsl(333, 80%, 67%);
+    }
+    .coment>div>img{
+        margin-left: 5%;
+        width: 35px;
+        border-radius: 100px;
+    }
+    #irene{
+        margin-left: 5%;
+    }
 }
 
