@@ -1,0 +1,96 @@
+body{
+    background-image:url(/8-huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: 80%;
+    height: 91%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+main{
+    margin-top: -1%;
+    padding: 3%;
+}
+.top{
+    position:absolute;
+}
+
+
+.float{
+    margin-top: 10%;
+    float: left;
+}
+#text{
+    width: 40%;
+}
+.float>img{
+    width: 90%;
+    margin-right: 0px;
+}
+
+button{
+    border-style: none;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    width: 150px;
+    height: 40px;
+    box-shadow: 5px 5px 5px 1px  hsla(0, 0%, 3%, 0.26);
+}
+.bottom{
+    margin-top: 10%;
+    float:right;
+    color: white;
+    width: 20%;
+    margin-right: 0;
+}
+.bottom>a>svg{
+    width: 30px;
+    padding: 2%;
+    color: white;
+}
+@media all and (max-width: 600px){
+    body{
+        background-image:url(/8-huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-size: 100%;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 16px;
+        align-items: center;
+    }
+    main{
+        padding: 5%;
+    }
+    .top{
+        position:relative;
+    }
+    .top>img{
+        width: 50%;
+    }
+    .float{
+        margin-top: 10%;
+    }
+    .float>img{
+        margin-left: 5%;
+    }
+    #text{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    #text>p{
+        font-size: 15px;
+    }
+    .bottom{
+        margin-top: 10%;
+        color: white;
+        width: 50%;
+        margin-right: 18%;
+    }
+    .bottom>a>svg{
+        width: 30px;
+        padding: 2%;
+        color: white;
+    }
+}
