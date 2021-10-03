@@ -15,9 +15,8 @@ main{
     position:absolute;
 }
 
-
 .float{
-    margin-top: 10%;
+    margin-top: 7%;
     float: left;
 }
 #text{
@@ -47,6 +46,10 @@ button{
     width: 30px;
     padding: 2%;
     color: white;
+}
+footer{
+    float: left;
+
 }
 @media all and (max-width: 600px){
     body{
