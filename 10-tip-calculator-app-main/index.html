@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="js/vue.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main >
+
+    <div class="container" id="app">
+        <div class="dados">
+          <div>
+            <label for="bill">Bill</label> 
+            <br>
+            <input type="number" placeholder="0" id="bill">
+          </div>
+          <div>
+            <label for="">Select Tip %</label>
+            <br>
+            <button @click="tip" value="5">5%</button>
+            <button @click="tip" value="10">10%</button>
+            <button @click="tip" value="15">15%</button>
+            <button @click="tip" value="25">25%</button>
+            <button @click="tip" value="50">50%</button>
+            <input class="custom" type="number" placeholder="Custom">
+          </div>
+          <label for="nPeople">Number of People</label>
+          <input type="number" id="nPeople">
+        </div> 
+        <div class="cal">
+          <div>
+            <b>Tip Amount</b><br>
+            <span>/ person</span> 
+            <div class="resp">
+              {{resTip}}
+            </div>
+            
+          </div>
+          <div>
+              <b>Total</b> <br>
+              <span>/ person</span>
+              <div class="resp">
+                {{resTotal}}
+              </div>
+          </div>
+
+          <button class="reset">Reset</button>       
+        </div>
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        resTip: 0.00,
+        resTotal: 0.00
+      },
+      methods: {
+        tip(e){
+            const valor = e.currentTarget.value
+            
+        }
+      }
+    })
+  </script>
+</body>
+</html>

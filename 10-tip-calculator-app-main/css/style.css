@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+input{
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 3px;
+    height: 8%;
+    width: 60%;
+    font-size: 15px;
+    padding: 2%;
+    margin: 3% 0% 3% 0%;
+    background-color:  hsl(189, 41%, 97%);
+}
+input:focus{
+    outline: solid 1px hsl(172, 67%, 45%);     /* oranges! yey */
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+.custom{
+    width: 20%;
+    height: 25%;
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 14px;
+    padding: 2%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    grid-template-rows: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+}
+button{
+    border: solid 1px hsl(172, 67%, 45%);
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    background-color: hsl(183, 100%, 15%);
+    color: #fff;
+    margin: 1%;
+}
+button:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+.dados{
+    margin-right: 5%;
+    grid-area: 1/1/1/1;
+}
+.cal{
+    background-color: hsl(183, 100%, 15%);
+    padding: 5%;
+    margin-left: 5%;
+    grid-area: 1/2/1/2;
+    color: #fff;
+}
+.resp{
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+span{
+    color: hsl(186, 14%, 43%);
+}
