@@ -18,7 +18,10 @@
 </head>
 <body>
   <main >
-
+    <div class="imagem">
+       <img src="images/logo.svg" alt="">
+    </div>
+   
     <div class="container" id="app">
         <div class="dados">
           <div>
@@ -28,7 +31,7 @@
           </div>
           <div>
             <label for="">Select Tip %</label>
-            <br>
+            <br>     
             <button @click="tip" value="5">5%</button>
             <button @click="tip" value="10">10%</button>
             <button @click="tip" value="15">15%</button>
@@ -36,26 +39,30 @@
             <button @click="tip" value="50">50%</button>
             <input class="custom" type="number" placeholder="Custom">
           </div>
-          <label for="nPeople">Number of People</label>
-          <input type="number" id="nPeople">
+          <div>
+            <label for="nPeople">Number of People</label>
+            <input type="number" id="nPeople" placeholder="0">
+          </div>
+          
         </div> 
         <div class="cal">
           <div>
             <b>Tip Amount</b><br>
             <span>/ person</span> 
             <div class="resp">
-              {{resTip}}
+              ${{resTip}}
             </div>
             
           </div>
+          <br>
           <div>
-              <b>Total</b> <br>
+              <b>Total</b><br>
               <span>/ person</span>
               <div class="resp">
-                {{resTotal}}
+                ${{resTotal}}
               </div>
           </div>
-
+          <br>
           <button class="reset">Reset</button>       
         </div>
     </div>
@@ -64,19 +71,32 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Thicianny Marques</a>.
   </div>
   <script>
     const vm = new Vue({
       el: "#app",
       data: {
-        resTip: 0.00,
-        resTotal: 0.00
+        resTip: 0,
+        resTotal: 0,
+        bill: 0,
+        nPeople: 0,
       },
+
       methods: {
         tip(e){
-            const valor = e.currentTarget.value
-            
+            let valor = e.currentTarget.value
+            let bill = parseFloat(document.querySelector("#bill").value);
+            let nPeople = parseFloat(document.querySelector("#nPeople").value);
+            if(!nPeople){
+                let tip = (valor/100)*bill
+                this.resTip= tip;
+                this.resTotal= bill+tip;
+            }else{          
+                let tip = ((valor/100)*bill)/nPeople;
+                this.resTip= tip;
+                this.resTotal= bill+tip;
+            }        
         }
       }
     })

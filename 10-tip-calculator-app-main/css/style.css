@@ -3,47 +3,79 @@
 body{
     background-color: hsl(185, 41%, 84%);
     font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%);
+    font-weight: 400;
+}
+.imagem{
+    width: 50px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+     
 }
 input{
     border: solid 1px hsl(0, 0%, 100%);
     border-radius: 3px;
     height: 8%;
-    width: 60%;
+    width: 90%;
     font-size: 15px;
     padding: 2%;
     margin: 3% 0% 3% 0%;
     background-color:  hsl(189, 41%, 97%);
 }
+input::-webkit-input-placeholder { text-align:right; }
 input:focus{
     outline: solid 1px hsl(172, 67%, 45%);     /* oranges! yey */
 }
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
 }
+#bill{
+    background: url(../images/icon-dollar.svg) no-repeat scroll 7px 7px;
+    padding-left:30px;
+    background-color:  hsl(189, 41%, 97%);
+}
+#nPeople{
+    background: url(../images/icon-person.svg) no-repeat scroll 7px 7px;
+    padding-left:30px;
+    background-color:  hsl(189, 41%, 97%);
+}
 .custom{
+    border-radius: 5px;
     width: 20%;
-    height: 25%;
+    height: 30px;
     margin-top: 1%;
-    margin-left: 1%;
-    font-size: 14px;
-    padding: 2%;
+    margin-left: 2%;
+    padding: 0% 2% 0% 2%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+input::placeholder { 
+    color: hsl(186, 14%, 43%);
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
 }
 .container{
     display: grid;
     grid-template-columns: 45% 50%;
     grid-template-rows: 100%;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 2%;
+    width: 50%;
+    margin: auto;
 }
 button{
-    border: solid 1px hsl(172, 67%, 45%);
+    border: solid 1px;
     border-radius: 5px;
-    width: 60px;
-    height: 30px;
+    width: 25%;
+    height: 35px;
     background-color: hsl(183, 100%, 15%);
-    color: #fff;
+    color: hsl(185, 41%, 84%);
     margin: 1%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
 }
 button:hover{
     background-color: hsl(172, 67%, 45%);
@@ -51,18 +83,36 @@ button:hover{
 .dados{
     margin-right: 5%;
     grid-area: 1/1/1/1;
+    align-items: flex-start;
+    
+}.dados>div{
+    margin-top: 5%;
 }
 .cal{
-    background-color: hsl(183, 100%, 15%);
-    padding: 5%;
     margin-left: 5%;
+    background-color: hsl(183, 100%, 15%);
+    padding: 10%;
     grid-area: 1/2/1/2;
     color: #fff;
+    border-radius: 15px;
 }
 .resp{
+    float: right;
     color: hsl(172, 67%, 45%);
     font-weight: 700;
+    font-size: 34px;
 }
 span{
     color: hsl(186, 14%, 43%);
+}
+.reset{
+    border: none;
+    border-radius: 5px;
+    margin-top: 20%;
+    width: 100%;
+    height: 18%;
+    padding: 1%;
+    background-color: hsla(184, 51%, 33%, 0.589);
+    color: hsl(183, 100%, 15%) ;
+    font-size: 20px;
 }
