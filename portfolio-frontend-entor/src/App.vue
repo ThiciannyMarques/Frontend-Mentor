@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div class="projetos">   
+      <div class="projetos " data-flickity-options='{ "wrapAround": true }'>   
         <div v-for="row in projetos" :key="row.link">
           <a :href="row.link">
             <div class="card">
@@ -70,7 +70,19 @@
           {
             nome: "order sumare",
             img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
-          } 
+          } ,
+           {
+            nome: "order sumare",
+            img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          } ,
+           {
+            nome: "order sumare",
+            img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          },
+           {
+            nome: "order sumare",
+            img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          }  
         ]       
       }
     }
@@ -105,8 +117,11 @@
   nav{ 
     background-image: url('assets/desktop/image-hero.jpg');
     color: hsl(0, 0%, 100%);
-    height: 500px;
-    
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .navbar{
     width: 80%;
@@ -169,10 +184,14 @@
   }
   .card{
     font-size: 18px;
-     font-family: 'Alata', sans-serif; 
-     background-color: rgba(141, 138, 133, 0.384);
-     padding: 15%;
-     border-radius: 15px;
+    font-family: 'Alata', sans-serif; 
+    background-color: rgba(141, 138, 133, 0.384);
+    padding: 15%;
+    border-radius: 15px;
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    counter-increment: card;
   }
   .card img{
     width: 100%;
