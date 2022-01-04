@@ -5,43 +5,42 @@
         <nav>
             <div class="navbar">
               <div class="logo">
-                <router-link>
+                <a href="#" >
                    <img src="../src/assets/logo.svg" alt=""> 
-                </router-link>
+                </a>
               </div>
               <div class="link">
-                <router-link> About </router-link>
-                <router-link> Carrers </router-link>
-                <router-link> Events </router-link>
-                <router-link> Products </router-link>
-                <router-link> Support </router-link>
+                <a href="home"> Home </a>
+                <a href="#sobre"> Sobre </a>
+                <a href="#projetos"> Projetos </a>
+                <a href="#contato"> Contato </a>
               </div>
             </div>  
             <div class="nav-text">
-              <span>IMMERSIVE EXPERIENCES THAT DELIVER</span>
+              <span>Thicianny Marques</span>
             </div> 
         </nav>
     </header>
     <main>
-      <div class="principal">
+
+      <h1 id="sobre">Sobre</h1>
+      <div  class="principal">
         <div class="principal-img">
-          <img src="../src/assets/desktop/image-interactive.jpg" alt="">
+          <img src="https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/8-huddle-landing-page-with-single-introductory-section-master/design/desktop-preview.jpg" alt="">
         </div>
         <div class="principal-text">
           <span>
-            The leader in interactive VR
+            Projetos do Frontend Mentor
           </span> 
 
           <p>
-            Founded in 2011, Loopstudios has been producing world-class virtual reality 
-            projects for some of the best companies around the globe. Our award-winning 
-            creations have transformed businesses through digital experiences that bind 
-            to their brand.
+            Projetos que pus em pratica minha habilidades em Frontend. Feitos com HTML, CSS e JAVASCRIPT, os projetos que vão além de tela de perfil, card groups, calculadora e ladding pages.
           </p> 
         </div>
       </div>
 
-      <div class="projetos " data-flickity-options='{ "wrapAround": true }'>   
+        <h1 id="projetos">Projetos</h1>
+      <div  class="projetos " data-flickity-options='{ "wrapAround": true }'>   
         <div v-for="row in projetos" :key="row.link">
           <a :href="row.link">
             <div class="card">
@@ -52,6 +51,19 @@
          
         </div>
       </div>
+      <div id="contato">
+        <h1>Contato</h1>
+        <ul>
+          <li>Celular: (91)984399335</li>
+          <li>Email: Thicianny14@gmail.com</li>
+          <li>Linkedin: adasd</li>
+          <li>Github: affafsadf</li>
+          <li>Portfolio: wafsgghgjklkhjk</li>
+        </ul>
+      </div>
+      <footer>
+        copyrigth
+      </footer>
     </main>
   </div>
   
@@ -68,21 +80,45 @@
         name: "jorge",
         projetos: [
           {
-            nome: "order sumare",
-            img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+            nome: "Order Sumare",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/1-order-summary-component-main/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
           } ,
            {
-            nome: "order sumare",
-            img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+            nome: "Status Preview Card",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/2-stats-preview-card-component-main/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
           } ,
            {
-            nome: "order sumare",
-            img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+            nome: "Column Preview Card",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/3-column-preview-card-component-master/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
           },
            {
-            nome: "order sumare",
-            img: "https://s2.static.brasilescola.uol.com.br/be/2020/12/peixe.jpg", link:"https://order-summary-component-main-steel.vercel.app"
-          }  
+            nome: "Profile Card",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/4-profile-card-component-main/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          },
+           {
+            nome: "Social Proof",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/5-social-proof-section-master/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          } ,
+           {
+            nome: "Four Card Feature",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/6-four-card-feature-section-master/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          },
+           {
+            nome: "Single Price Grid",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/7-single-price-grid-component-master/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          },
+           {
+            nome: "Huddle Landing Page With Single Introductory",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/8-huddle-landing-page-with-single-introductory-section-master/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          } ,
+           {
+            nome: "Base Apparel Coming Soon",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/9-base-apparel-coming-soon-master/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          },
+           {
+            nome: "Tip Calculator App",
+            img: "https://raw.githubusercontent.com/ThiciannyMarques/Frontend-Mentor/master/10-tip-calculator-app-main/design/desktop-preview.jpg", link:"https://order-summary-component-main-steel.vercel.app"
+          }   
         ]       
       }
     }
@@ -106,6 +142,14 @@
     color: #2c3e50;
     font-family: 'Josefin Sans', sans-serif; 
   }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  h1{
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
   body {
     padding: 0px;
     margin: 0px;
@@ -115,7 +159,7 @@
 
 
   nav{ 
-    background-image: url('assets/desktop/image-hero.jpg');
+    background-image: url('https://kinsta.com/pt/wp-content/uploads/sites/3/2020/02/praticas-web-design-proximo-projecto.jpg');
     color: hsl(0, 0%, 100%);
     height: 700px;
     background-attachment: fixed;
@@ -150,7 +194,7 @@
 
   .principal{
     display: flex;
-    padding: 10%;
+    padding: 0% 10% 0% 10%;
   }
   .principal-img{
     width: 40%;
@@ -178,23 +222,38 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    margin: 30px;
     width: 80%;
-    margin: auto;
+    margin: 0% 10% 0% 14%;
   }
   .card{
     font-size: 18px;
     font-family: 'Alata', sans-serif; 
-    background-color: rgba(141, 138, 133, 0.384);
-    padding: 15%;
+    color: rgb(115, 115, 126);
+    background-color: rgba(196, 196, 196, 0.199);
+    padding: 0% 5% 5% 5%;
     border-radius: 15px;
-    width: 66%;
-    height: 200px;
+    width: 70%;
+    height: 230px;
     margin-right: 10px;
     counter-increment: card;
   }
   .card img{
     width: 100%;
+  }
+
+  #contato ul{
+    text-align: left;
+    
+  }
+  #contato ul li{
+    margin-top: 2%;
+    text-decoration: none;
+  }
+  footer{
+    width: 100%;
+    padding: 1%;
+    background-color: blue;
+    color: white;
   }
 
 </style>
